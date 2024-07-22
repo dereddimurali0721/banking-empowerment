@@ -12,7 +12,7 @@
 
 ### Please find the below steps to get started
 
-1. clone the repo ```git clone ```
+1. clone the repo ```git clone git@github.com:dereddimurali0721/banking-empowerment.git```
 
 2. open code editor navigate to the project
 3. open terminal
