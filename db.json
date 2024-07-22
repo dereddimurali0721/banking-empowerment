@@ -1,0 +1,327 @@
+{
+  "expenses": [
+    {
+      "id": "0",
+      "label": "Shopping",
+      "value": 25
+    },
+    {
+      "id": "2",
+      "label": "Entertainment",
+      "value": 25
+    },
+    {
+      "id": "3",
+      "label": "Food",
+      "value": 25
+    },
+    {
+      "id": "4",
+      "label": "Holiday",
+      "value": 25
+    }
+  ],
+  "investments": [
+    {
+      "id": "0",
+      "label": "Mutual Funds",
+      "value": 25
+    },
+    {
+      "id": "1",
+      "label": "Equity",
+      "value": 25
+    },
+    {
+      "id": "2",
+      "label": "SIP",
+      "value": 25
+    },
+    {
+      "id": "3",
+      "label": "Retirement Plan",
+      "value": 25
+    },
+    {
+      "id": "4",
+      "label": "Health",
+      "value": 25
+    },
+    {
+      "id": "5",
+      "label": "Term",
+      "value": 25
+    }
+  ],
+  "expenditure": [
+    {
+      "id": "0",
+      "label": "Total Income ",
+      "value": 25
+    },
+    {
+      "id": "1",
+      "label": "Investments",
+      "value": 25
+    },
+    {
+      "id": "2",
+      "label": "Expenses",
+      "value": 25
+    }
+  ],
+  "investmentstable": [
+    {
+      "label": "label1",
+      "value": 1,
+      "x": 5,
+      "y": 5,
+      "id": "4521"
+    },
+    {
+      "label": "label2",
+      "value": 2,
+      "id": "2af5"
+    },
+    {
+      "label": "label3",
+      "value": 3,
+      "id": "3b75"
+    },
+    {
+      "label": "label4",
+      "value": 4,
+      "id": "422a"
+    },
+    {
+      "label": "label5",
+      "value": 5,
+      "id": "4fe7"
+    },
+    {
+      "label": "label6",
+      "value": 6,
+      "id": "ae84"
+    },
+    {
+      "label": "label7",
+      "value": 7,
+      "id": "688c"
+    },
+    {
+      "label": "label8",
+      "value": 8,
+      "id": "81b8"
+    },
+    {
+      "label": "label9",
+      "value": 9,
+      "id": "b6d3"
+    },
+    {
+      "label": "label10",
+      "value": 10,
+      "id": "caee"
+    },
+    {
+      "label": "label11",
+      "value": 11,
+      "id": "1b08"
+    }
+  ],
+  "authenticate": [
+    {
+      "id": "d805",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "adsfsfds",
+      "rememberMe": false
+    },
+    {
+      "id": "4c9f",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sfdsfdsfdfsd",
+      "rememberMe": false
+    },
+    {
+      "id": "7cef",
+      "email": "sfsdfsfsfd@d.vom",
+      "password": "adfasfdasdf",
+      "rememberMe": false
+    },
+    {
+      "id": "9654",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "asdfsfds",
+      "rememberMe": false
+    },
+    {
+      "id": "9294",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sdfsdfs",
+      "rememberMe": false
+    },
+    {
+      "id": "b784",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "dfgdgfdgf",
+      "rememberMe": false
+    },
+    {
+      "id": "e5ef",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sfdsfsdf",
+      "rememberMe": false
+    },
+    {
+      "id": "a57d",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sdfsfsd",
+      "rememberMe": false
+    },
+    {
+      "id": "2316",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sfsdsfsfd",
+      "rememberMe": false
+    },
+    {
+      "id": "7fb5",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sdfsfdsf",
+      "rememberMe": false
+    },
+    {
+      "id": "3066",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sfsfsfdsd",
+      "rememberMe": false
+    },
+    {
+      "id": "a934",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sdfsfdsf",
+      "rememberMe": false
+    },
+    {
+      "id": "e432",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sfsdfsfds",
+      "rememberMe": false
+    },
+    {
+      "id": "b0a0",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "23fsdfs",
+      "rememberMe": false
+    },
+    {
+      "id": "eaab",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sdfsfd",
+      "rememberMe": false
+    },
+    {
+      "id": "8468",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sdsdfsdfs",
+      "rememberMe": false
+    },
+    {
+      "id": "8e79",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "sfsfdsdf",
+      "rememberMe": false
+    },
+    {
+      "id": "c067",
+      "email": "aradhyulaveerateja0742@gmail.com",
+      "password": "jhvhgvhghgh",
+      "rememberMe": false
+    },
+    {
+      "id": "0c45",
+      "email": "",
+      "password": "sfsfsdfsfsdfsfdd",
+      "rememberMe": false,
+      "userId": "dfsdsdfsfd1212&"
+    },
+    {
+      "id": "0250",
+      "userId": "sfdsf",
+      "password": "sdfsf",
+      "rememberMe": false
+    },
+    {
+      "id": "ad2b",
+      "userId": "1",
+      "password": "sfsdf",
+      "rememberMe": false
+    },
+    {
+      "id": "ea60",
+      "userId": "1",
+      "password": "sfdsfsd",
+      "rememberMe": false
+    },
+    {
+      "id": "7b41",
+      "userId": "admin",
+      "password": "sfdsffd",
+      "rememberMe": false
+    },
+    {
+      "id": "3a82",
+      "userId": "1",
+      "password": "sfsdf",
+      "rememberMe": false
+    },
+    {
+      "id": "ca91",
+      "userId": "1",
+      "password": "sfsfdsfd",
+      "rememberMe": false
+    },
+    {
+      "id": "8a90",
+      "userId": "1",
+      "password": "asdas",
+      "rememberMe": false
+    },
+    {
+      "id": "7c9d",
+      "userId": "1",
+      "password": "sdfsdf",
+      "rememberMe": false
+    },
+    {
+      "id": "aa14",
+      "userId": "1",
+      "password": "asdasd",
+      "rememberMe": false
+    },
+    {
+      "id": "f0e8",
+      "userId": "1",
+      "password": "asdadadsa231232323",
+      "rememberMe": false
+    },
+    {
+      "id": "96f4",
+      "userId": "hhhh",
+      "password": "Dered",
+      "rememberMe": false
+    },
+    {
+      "id": "ce11",
+      "userId": "hhh",
+      "password": "hhh",
+      "rememberMe": false
+    },
+    {
+      "id": "e909",
+      "userId": "jjjjj",
+      "password": "kkkk",
+      "rememberMe": false
+    }
+  ]
+}

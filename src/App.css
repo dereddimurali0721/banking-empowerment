@@ -1,0 +1,10 @@
+.MuiFormHelperText-root {
+  color: red;
+}
+
+#email-helper-text {
+  color: red;
+}
+#password-helper-text {
+  color: red;
+}
