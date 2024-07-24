@@ -18,6 +18,7 @@ import FixedFooter from "./components/FixedFooter/FixedFooter";
 import HomePage from "./pages/HomePage/HomePage";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import InvestPage from "./pages/InvestPage/InvestPage";
+import BankWidePage from "./pages/BankWidePage/BankWidePage";
 import useUserContext from "./context/UserContext/useUserContext";
 
 function App() {
@@ -49,7 +50,6 @@ function App() {
               <Stack direction={"row"} spacing={2} alignContent={"center"}>
                 <Button
                   variant="outlined"
-                  // color={theme.palette.common.white}
                   sx={{ color: theme.palette.common.white }}
                   onClick={() => {
                     navigate("/home");
@@ -60,19 +60,20 @@ function App() {
                 <Button
                   variant="outlined"
                   sx={{ color: theme.palette.common.white }}
-                  // sx={{
-                  //   background: theme.palette.common.white,
-                  //   color: theme.palette.primary.main,
-                  //   ":hover": {
-                  //     background: theme.palette.common.white,
-                  //     opacity: "20%",
-                  //   },
-                  // }}
                   onClick={() => {
                     navigate("/invest");
                   }}
                 >
                   Invest
+                </Button>
+                <Button
+                  variant="outlined"
+                  sx={{ color: theme.palette.common.white }}
+                  onClick={() => {
+                    navigate("/others");
+                  }}
+                >
+                  others
                 </Button>
                 <Avatar sx={{}}></Avatar>
               </Stack>
@@ -106,6 +107,14 @@ function App() {
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="/500" element={<ErrorPage />} />
           <Route path="/maintenance" element={<MaintenancePage />} />
+          <Route
+            path="/others"
+            element={
+              <ProtectedRoute>
+                <BankWidePage />
+              </ProtectedRoute>
+            }
+          />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         {/* <Grid item sx={{ position: "sticky", bottom: "0" }}>

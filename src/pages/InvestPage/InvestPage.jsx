@@ -12,7 +12,6 @@ import {
   useTheme,
 } from "@mui/material";
 import InvestForm from "../../components/forms/SignInForm/InvestForm";
-import CurrencyPoundIcon from "@mui/icons-material/CurrencyPound";
 import TableLoader from "../../components/Loaders/TableLoader";
 import getInvestmentsTableData from "../../API/ApiCalls/getInvestmentsTableData";
 import { useQuery } from "react-query";

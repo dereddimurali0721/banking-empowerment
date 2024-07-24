@@ -70,6 +70,77 @@
       "value": 25
     }
   ],
+  "bankwideexpenses": [
+    {
+      "id": "0",
+      "label": "Shopping",
+      "value": 25
+    },
+    {
+      "id": "2",
+      "label": "Entertainment",
+      "value": 25
+    },
+    {
+      "id": "3",
+      "label": "Food",
+      "value": 25
+    },
+    {
+      "id": "4",
+      "label": "Holiday",
+      "value": 25
+    }
+  ],
+  "bankwideinvestments": [
+    {
+      "id": "0",
+      "label": "Mutual Funds",
+      "value": 25
+    },
+    {
+      "id": "1",
+      "label": "Equity",
+      "value": 25
+    },
+    {
+      "id": "2",
+      "label": "SIP",
+      "value": 25
+    },
+    {
+      "id": "3",
+      "label": "Retirement Plan",
+      "value": 25
+    },
+    {
+      "id": "4",
+      "label": "Health",
+      "value": 25
+    },
+    {
+      "id": "5",
+      "label": "Term",
+      "value": 25
+    }
+  ],
+  "bankwideexpenditure": [
+    {
+      "id": "0",
+      "label": "Total Income ",
+      "value": 25
+    },
+    {
+      "id": "1",
+      "label": "Investments",
+      "value": 25
+    },
+    {
+      "id": "2",
+      "label": "Expenses",
+      "value": 25
+    }
+  ],
   "investmentstable": [
     {
       "label": "label1",
@@ -306,21 +377,51 @@
       "rememberMe": false
     },
     {
-      "id": "96f4",
-      "userId": "hhhh",
-      "password": "Dered",
+      "id": "ab5b",
+      "userId": "admin",
+      "password": "sfdsdf",
       "rememberMe": false
     },
     {
-      "id": "ce11",
-      "userId": "hhh",
-      "password": "hhh",
+      "id": "4230",
+      "userId": "1",
+      "password": "sfdsfd",
       "rememberMe": false
     },
     {
-      "id": "e909",
-      "userId": "jjjjj",
-      "password": "kkkk",
+      "id": "3afc",
+      "userId": "1",
+      "password": "sfsfd",
+      "rememberMe": false
+    },
+    {
+      "id": "8924",
+      "userId": "admin",
+      "password": "asdfs",
+      "rememberMe": false
+    },
+    {
+      "id": "331a",
+      "userId": "1",
+      "password": "sfsfsfdsfd",
+      "rememberMe": false
+    },
+    {
+      "id": "aad3",
+      "userId": "1",
+      "password": "sdfsdfsdf",
+      "rememberMe": false
+    },
+    {
+      "id": "8ae0",
+      "userId": "admin",
+      "password": "sdfsd",
+      "rememberMe": false
+    },
+    {
+      "id": "8c30",
+      "userId": "sdfdfs",
+      "password": "sdfdf",
       "rememberMe": false
     }
   ]

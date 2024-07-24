@@ -12,11 +12,11 @@
 
 ### Please find the below steps to get started
 
-1. clone the repo ```git clone git@github.com:dereddimurali0721/banking-empowerment.git```
+1. clone the repo ```git clone https://github.com/aradhyula-Veera-teja/banking_application.git```
 
 2. open code editor navigate to the project
 3. open terminal
 4. install the dependencies ```npm i``` or ```yarn install```.
-5. start the Json web server to mock the backend using ```npm run serve```
+5. start the Json web server to mock the backend using ```npm serve```
 6. In another terminal enter ```npm start``` to start the development server and continue with development.
 7. Run ```npm run build``` to build the package.

@@ -1,41 +1,40 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import preErrorPage from "./assets/loaders/preErrorPage.gif";
+import gearImage from "./assets/loaders/prePageLoader.svg";
 
-import App from "./App.jsx";
 import "./index.css";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import UserContextProvider from "./context/UserContext/UserContextProvider.jsx";
+import { ErrorBoundary } from "react-error-boundary";
 
-const queryClient = new QueryClient();
-const theme = createTheme({
-  palette: {
-    // mode: "dark",
-    primary: {
-      main: "#006A4D",
-    },
-    secondary: {
-      main: "#e87a00",
-    },
-  },
-});
+const BootStrap = lazy(() => import("./BootStrap"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <QueryClientProvider client={queryClient}>
-        <UserContextProvider>
-          <Router>
-            <CssBaseline />
-            <App />
-          </Router>
-        </UserContextProvider>
-      </QueryClientProvider>
-    </ThemeProvider>
+    <ErrorBoundary
+      fallback={
+        <div className="errorOrLoading">
+          <img src={preErrorPage} />
+          <h1>
+            Something went wrong. We are working on that. please come back
+            later.
+          </h1>
+        </div>
+      }
+    >
+      <Suspense
+        fallback={
+          <div className="errorOrLoading">
+            <img src={gearImage} width={300} height={300} />
+            <h1>Please wait 😊</h1>
+          </div>
+        }
+      >
+        <BootStrap />
+      </Suspense>
+    </ErrorBoundary>
   </React.StrictMode>
 );
