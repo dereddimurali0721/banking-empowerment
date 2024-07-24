@@ -4,7 +4,7 @@ import UserContextProvider from "./context/UserContext/UserContextProvider.jsx";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import App from "./App.jsx";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 export default function BootStrap() {
   const queryClient = new QueryClient();
   const theme = createTheme({

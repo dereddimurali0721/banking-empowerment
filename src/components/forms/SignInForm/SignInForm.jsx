@@ -16,13 +16,13 @@ import signInUser from "../../../API/ApiCalls/sigiInuser";
 import useUserContext from "../../../context/UserContext/useUserContext";
 
 const initialValues = {
-  userId: "",
+  customerId: "",
   password: "",
   rememberMe: false,
 };
 
 const validationSchema = Yup.object().shape({
-  userId: Yup.string().required("Email is required"),
+  customerId: Yup.string().required("Customer Id is required"),
   password: Yup.string().required("Password is required"),
   rememberMe: Yup.boolean(),
 });
@@ -33,8 +33,9 @@ export default function SignInForm() {
 
   const { isLoading, isError, mutate, isSuccess } = useMutation(signInUser, {
     onSuccess: (data) => {
+      console.log(data);
       // setUserData();
-      sessionStorage.setItem("userEmail", data.userId);
+      sessionStorage.setItem("customerId", data.customerId);
       // navigate("/home");
     },
   });
@@ -70,11 +71,11 @@ export default function SignInForm() {
             margin="normal"
             required
             fullWidth
-            id="userId"
-            label="User ID"
-            name="userId"
-            autoComplete="userId"
-            helperText={<ErrorMessage name="userId" />}
+            id="customerId"
+            label="Customer ID"
+            name="customerId"
+            autoComplete="customerId"
+            helperText={<ErrorMessage name="customerId" />}
             autoFocus
           />
           <Field
