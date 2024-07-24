@@ -12,7 +12,7 @@
 
 ### Please find the below steps to get started
 
-1. clone the repo ```git clone https://github.com/aradhyula-Veera-teja/banking_application.git```
+1. clone the repo ```git clone https://github.com/```
 
 2. open code editor navigate to the project
 3. open terminal
