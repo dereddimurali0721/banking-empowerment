@@ -15,7 +15,7 @@ import { useState } from "react";
 import getApiData from "../../API/utils/getApiData";
 import { ages, salaries } from "./constants";
 export default function HomePage() {
-  const [age, setAge] = useState("");
+  const [type, setType] = useState("");
   const [salary, setSalary] = useState("");
 
   const {
@@ -28,7 +28,8 @@ export default function HomePage() {
   } = useQuery(
     "bankwideexpenses",
     () => {
-      return getApiData("/bankwideexpenses");
+      console.log("inside",sessionStorage.getItem("type"));
+      return getApiData(`/overallTrends/${sessionStorage.getItem('customerId')}/${sessionStorage.getItem("type")}/Expense`);
     },
     { refetchOnWindowFocus: false, enabled: false }
   );
@@ -42,7 +43,7 @@ export default function HomePage() {
   } = useQuery(
     "bankwideexpenditure",
     () => {
-      return getApiData("/bankwideexpenditure");
+      return getApiData(`/overallTrends/${sessionStorage.getItem('customerId')}/${sessionStorage.getItem("type")}/Expenditure`);
     },
     { refetchOnWindowFocus: false, enabled: false }
   );
@@ -56,13 +57,15 @@ export default function HomePage() {
   } = useQuery(
     "bankwideinvestments",
     () => {
-      return getApiData("/bankwideinvestments");
+      return getApiData(`/overallTrends/${sessionStorage.getItem('customerId')}/${sessionStorage.getItem("type")}/Investment`);
     },
     { refetchOnWindowFocus: false, enabled: false }
   );
 
   const handleAgeChange = (event) => {
-    setAge(event.target.value);
+    setType(event.target.value);
+    console.log(event.target.value);
+    sessionStorage.setItem("type", event.target.value);
     refetchData();
   };
 
@@ -100,7 +103,7 @@ export default function HomePage() {
                   fullWidth
                   labelId="bankWideAgeFilter"
                   id="demo-simple-select"
-                  value={age}
+                  value={type}
                   label="Category"
                   onChange={handleAgeChange}
                   disabled={
@@ -114,6 +117,7 @@ export default function HomePage() {
                 >
                   <MenuItem value="Age">Age</MenuItem>
                   <MenuItem value="Salary">Salary</MenuItem>
+                  <MenuItem value="All">All</MenuItem>
                 </Select>
               </FormControl>
             </Grid>

@@ -33,9 +33,10 @@ export default function SignInForm() {
 
   const { isLoading, isError, mutate, isSuccess } = useMutation(signInUser, {
     onSuccess: (data) => {
-      console.log(data);
+      console.log(data.data.customerId);
+      console.log(data.data.authentication);
       // setUserData();
-      sessionStorage.setItem("customerId", data.customerId);
+      sessionStorage.setItem("customerId", data.data.customerId);
       // navigate("/home");
     },
   });
