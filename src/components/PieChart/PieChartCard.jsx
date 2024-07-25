@@ -12,13 +12,13 @@ function PieChartCard({ heading, pieChatData, onItemClickHandler }) {
           series={[
             {
               data: pieChatData,
-              outerRadius: 50,
-              cx: 50,
+              outerRadius: 65,
+              cx: 90,
               highlightScope: { faded: "global", highlighted: "item" },
               faded: { innerRadius: 30, additionalRadius: -30, color: "gray" },
             },
           ]}
-          width={300}
+          width={400}
           height={200}
           onItemClick={(event, d) => {
             sessionStorage.setItem("headingLabel", heading);
