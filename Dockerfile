@@ -22,4 +22,4 @@ RUN npm run build
 RUN npm install -g serve
 
 # Run the app. CMD is required to run on Cloud Run
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "dist", "-l", "8080"]
