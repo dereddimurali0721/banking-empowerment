@@ -19,6 +19,7 @@ import getExpenses from "../../API/ApiCalls/getExpenses";
 import getExpenditure from "../../API/ApiCalls/getExpenditure";
 import getInvestments from "../../API/ApiCalls/getInvestments";
 import getInvestmentsTableData from "../../API/ApiCalls/getInvestmentsTableData";
+import getTranscationsData from "../../API/ApiCalls/getTranscationsData";
 import TableLoader from "../../components/Loaders/TableLoader";
 import { useState } from "react";
 import StyledHeaderCell from "../../components/tableComponents/StyledHeaderCell";
@@ -54,7 +55,7 @@ export default function HomePage() {
     data: tableData,
     isSuccess: tableIsSuccess,
     refetch: tableRefetch,
-  } = useQuery("InvestmentsTable", getInvestmentsTableData, {
+  } = useQuery("InvestmentsTable", getTranscationsData, {
     enabled: false,
     refetchOnWindowFocus: false,
   });
