@@ -52,27 +52,42 @@ export default function InvestForm({ isLoading, onSubmitHandler }) {
     }
   };
 
-  function estimateMonthlyInterest(P, n, FV) {
-    let r = 0; // Start with 0% interest
-    let increment = 0.000001; // Increment rate by 0.0001%
-    let maxR = 1; // 100% is the upper limit of interest rate to check
-    let tolerance = 1; // How close to the actual FV we need to be
+  function estimateMonthlyInterest(monthlyAmount, termYears,targetAmount) {
+    // Convert term in years to months
+    let termMonths = termYears * 12;
 
-    // Function to calculate future value given a rate
-    function calculateFutureValue(P, r, n) {
-      return (P * ((1 + r) ** n - 1)) / r;
+    // Initial guess for monthly interest rate (assuming linear approximation)
+    let monthlyRateGuess = (targetAmount - monthlyAmount * termMonths) / (monthlyAmount * termMonths);
+
+    // Function to calculate remaining balance
+    function remainingBalance(monthlyRate) {
+        let balance = 0;
+        let currentAmount = monthlyAmount;
+        for (let i = 0; i < termMonths; i++) {
+            balance += currentAmount;
+            balance *= (1 + monthlyRate);
+        }
+        return balance - targetAmount;
     }
 
-    // Increase r until the calculated future value is close enough to FV
-    while (r < maxR) {
-      let calculatedFV = calculateFutureValue(P, r, n);
-      if (Math.abs(calculatedFV - FV) <= tolerance) {
-        return r;
-      }
-      r += increment;
+    // Iterative approach to refine the monthly interest rate using Newton's method
+    let tolerance = 0.0001; // Adjust as needed
+    let rate = monthlyRateGuess;
+    let increment = 1;
+    let tries = 0;
+    while (Math.abs(remainingBalance(rate)) > tolerance && tries < 1000) {
+        let balance = remainingBalance(rate);
+        if (balance > 0) {
+            rate += increment;
+        } else {
+            rate -= increment;
+            increment /= 2;
+        }
+        tries++;
     }
 
-    return r;
+    // Return the monthly interest rate (as a decimal)
+    return rate;
   }
 
   return (

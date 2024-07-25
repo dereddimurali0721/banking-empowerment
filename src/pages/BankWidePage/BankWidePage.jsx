@@ -88,10 +88,10 @@ export default function HomePage() {
   return (
     <Box sx={{ p: 3 }}>
       <Typography sx={{ pt: 1 }} variant="h4" gutterBottom align="center">
-        Others page
+        Trends
       </Typography>
       <Typography variant="body2" align="center">
-        Please sect the filters to see the data
+        Please select the filters to see the data
       </Typography>
       <Grid container flexDirection={"column"} gap={3}>
         <Grid item>
@@ -161,7 +161,7 @@ export default function HomePage() {
                   />
                 )}
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               {(ExpenditureIsFetching || ExpenditureIsLoading) && (
                 <PieChartCardLoader />
               )}
@@ -175,7 +175,7 @@ export default function HomePage() {
                     onItemClickHandler={pieChartItemClickHandler}
                   />
                 )}
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
       </Grid>

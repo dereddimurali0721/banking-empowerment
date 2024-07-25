@@ -73,7 +73,7 @@ function App() {
                     navigate("/others");
                   }}
                 >
-                  others
+                  Trends
                 </Button>
                 <Avatar sx={{}}></Avatar>
               </Stack>

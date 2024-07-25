@@ -107,19 +107,19 @@ export default function HomePage() {
                 />
               )}
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               {(ExpenditureIsFetching || ExpenditureIsLoading) && (
                 <PieChartCardLoader />
               )}
               {ExpenditureIsError && <PieChartNoData />}
               {ExpenditureIsSuccess && (
                 <PieChartCard
-                  heading="Expenditure"
+                  heading="Summary"
                   pieChatData={ExpenditureData.data}
                   onItemClickHandler={pieChartItemClickHandler}
                 />
               )}
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
         <Grid item>
