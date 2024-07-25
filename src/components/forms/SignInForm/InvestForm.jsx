@@ -37,7 +37,7 @@ export default function InvestForm({ isLoading, onSubmitHandler }) {
 
   const handleSignInSubmit = async (values) => {
     console.log("Sign in form values", values);
-
+    sessionStorage.setItem("fixedRate", sliderCount);
     onSubmitHandler();
   };
 

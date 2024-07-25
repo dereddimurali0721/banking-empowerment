@@ -56,15 +56,17 @@ export default function InvestPage() {
             <Table stickyHeader>
               <TableHead>
                 <TableRow>
-                  <StyledHeaderCell>LABEL</StyledHeaderCell>
-                  <StyledHeaderCell>VALUE</StyledHeaderCell>
+                  <StyledHeaderCell>S.No</StyledHeaderCell>
+                  <StyledHeaderCell>Risk Category</StyledHeaderCell>
+                  <StyledHeaderCell>Investment Suggestions</StyledHeaderCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {data.data.map((item) => (
-                  <TableRow key={item.label}>
-                    <TableCell>{item.label}</TableCell>
-                    <TableCell>{item.value}</TableCell>
+                  <TableRow key={item.id}>
+                    <TableCell>{item.id}</TableCell>
+                    <TableCell>{item.riskCategory}</TableCell>
+                    <TableCell>{item.investmentSuggestions}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

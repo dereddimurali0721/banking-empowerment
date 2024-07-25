@@ -61,6 +61,8 @@ export default function HomePage() {
 
   const pieChartItemClickHandler = (data, heading) => {
     console.log("pieChartItemClickHandler", data);
+    sessionStorage.setItem("category", heading.slice(0, -1));
+    sessionStorage.setItem("subCategory", data.label);
     setTableHeading(heading);
     setSubTopic(data.label);
     tableRefetch();
@@ -158,19 +160,19 @@ export default function HomePage() {
                 <Table stickyHeader>
                   <TableHead>
                     <TableRow>
-                      <StyledHeaderCell>LABEL</StyledHeaderCell>
-                      <StyledHeaderCell>VALUE</StyledHeaderCell>
-                      <StyledHeaderCell>xyz</StyledHeaderCell>
-                      <StyledHeaderCell>123</StyledHeaderCell>
+                      <StyledHeaderCell>S.No</StyledHeaderCell>
+                      <StyledHeaderCell>Vendor</StyledHeaderCell>
+                      <StyledHeaderCell>Amount</StyledHeaderCell>
+                      <StyledHeaderCell>Transaction Date</StyledHeaderCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
                     {tableData.data.map((item) => (
-                      <TableRow key={item.label}>
-                        <TableCell>{item.label}</TableCell>
-                        <TableCell>{item.value}</TableCell>
-                        <TableCell>{item.x}</TableCell>
-                        <TableCell>{item.y}</TableCell>
+                      <TableRow key={item.id}>
+                        <TableCell>{item.id}</TableCell>
+                        <TableCell>{item.category_vendor}</TableCell>
+                        <TableCell>{item.amount}</TableCell>
+                        <TableCell>{item.created_date}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
