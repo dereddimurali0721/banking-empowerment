@@ -200,7 +200,7 @@
       "id": "1b08"
     }
   ],
-  "authenticate": [
+  "login": [
     {
       "id": "d805",
       "email": "aradhyulaveerateja0742@gmail.com",
@@ -416,6 +416,12 @@
       "id": "8ae0",
       "userId": "admin",
       "password": "sdfsd",
+      "rememberMe": false
+    },
+    {
+      "id": "0862",
+      "customerId": "adsfsd",
+      "password": "sff",
       "rememberMe": false
     }
   ]
